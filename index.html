@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Digital Herbarium</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1><a href="index.html">Digital Herbarium</a></h1>
+<a href="about.html">About</a>
+<a href="analysis.html">Analysis</a>
+  <a href="network.html">Network Visualisation</a>
+  <a href="map.html">Map</a>
+</header>
+
+<p>
+  <input type="search" id="search" placeholder="Search by name, family, or place">
+  <select id="area-filter">
+    <option value="">All places</option>
+  </select>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th data-key="name">Plant</th>
+      <th data-key="family">Family</th>
+      <th data-key="area">Place</th>
+      <th data-key="dateSort">Date observed</th>
+    </tr>
+  </thead>
+  <tbody id="rows"></tbody>
+</table>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

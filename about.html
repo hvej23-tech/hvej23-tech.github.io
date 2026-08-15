@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Digital Herbarium</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1><a href="index.html">Digital Herbarium</a></h1>
+<a href="about.html">About</a>
+<a href="analysis.html">Analysis</a>
+  <a href="network.html">Network Visualisation</a>
+  <a href="map.html">Map</a>
+</header>
+
+
+<h3 id="project">The Project</h3>
+
+<p>This project aimed to create a Digital Herbarium using AI tools. Plants were collected at four sites, at three different times of year, in the local Cambridge area. As well as creating a record of the distribution of plant species in these different environments (grassland, marsh, woodland, urban), I also wanted to explore the differences between digital (AI) plant identification and traditional methods. In the process, I hoped to learn a lot more about plant species and classification, and improve my own observational skills, rather than just relying on the apps. I used the app PlantNet to record the GPS location of the plant, and export the data to my website, but also checked the identification of each plant using the keys in traditional plant flora books (mainly <i>The Collins Wildflower Guide</i> and the <i>Flora Britannica</i>). The main output of the project is this website, which allows you to search through the collected plants and see information about them, connect to information on Wikipedia, and see the collection on a <a href="map.html">map</a> and as a <a href="network.html">network visualisation</a>. There is also an <a href="analysis.html">analysis</a> section which contains interpretation of the dataset.</p>
+
+
+
+
+<h3 id="herbarium">What is a Herbarium?</h3>
+
+<p>Herbaria - analogue or digital plant collections - have always played a role in global environmental and cultural change. The first recorded herbarium was created by the Renaissance physician and botanist, Luce Ghini, in 1543 and early herbaria were mainly used for medicinal purposes. During the following centuries, as Europeans began to discover and exploit new territories, herbaria were used to classify and showcase plant species from the Americas and Asia. In his <i>Philosophia Botanica</i> (1751), the  biologist and 'father of taxonomy', Carl Linnaeas, gave detailed instructions on how to press and preserve individual plant specimens, and how to organise them in a multi-drawer cabinet which enabled easier identification and classification of species. Until recently, this was the way in which all evidence about the plant world was presented. As part of my research, I visited the <a href="https://www.herbarium.plantsci.cam.ac.uk/">Cambridge University Herbarium</a>, which contains many historical specimens, including plants collected by Charles Darwin on his voyage on the Beagle.</p>
+
+
+<img src="../images/IMG_4791.jpg" alt="Herbarium specimen" width="30%">
+<img src="../images/IMG_4792.jpg" alt="Herbarium specimen" width="30%">
+<img src="../images/IMG_4794.jpg" alt="Herbarium specimen" width="30%">
+
+
+<p>In the age of digitisation, millions of plant species from thousands of herbaria can now be viewed and analysed online. This crowdsourced 'meta-herbarium of the future' (Davis, 2023) is being used to construct evolutionary analyses of DNA, aid climate change research, analyse new plant diseases and invasive species, and chart species loss. AI tools, originally trained by expert botanists, are now able to identify plants in a matter of seconds. Apps such as <a href="https://plantnet.org/en/">PlantNet</a>, <a href="https://www.inaturalist.org/">INaturalist</a> and <a href="https://floraincognita.com/">Flora Incognita</a> enable non-experts to upload plant sightings, without having to go through the work of checking through specialised plant keys and books, which are often full of difficult botanical terms. There are clear disadvantages, as well as benefits, to this change to the way in which plants are identified. Everyday expertise about the plant world - and the ways in which plant species are related and classified - is rapidly being lost. Although plant apps are incredibly helpful in the short-term, they don't really advance human perception. The ease and speed with which AI tools can pinpoint a plant species devalues the skill of close observation, and prevents understanding of how plant species fit together in local ecologies and environments. </p>
+
+<img src="../images/IMG_4799.jpg" alt="Herbarium digitisation setup" width="50%" style="display: block; margin: auto;">
+
+
+
+<h3 id="methodology">Methodology</h3>
+
+<p><b>Site selection</b></p>
+
+<p>The project collected plant identifications at four sites:</p>
+
+<p>
+  <ul>
+    <li><a href="https://cambridgeppf.org/wandlebury-country-park/">Wandlebury Country Park</a></li>
+    <li><a href="https://www.wildlifebcn.org/nature-reserves/beechwoods">Beechwoods Nature Reserve</a></li>
+    <li><a href="https://cambridgeppf.org/coton-nature-reserve/">Coton Countryside Reserve</a></li>
+    <li><a href="https://millroadcemetery.org.uk/">Mill Road Cemetery</a></li>
+  </ul>
+</p>
+
+<p>These sites were carefully chosen to represent a variety of different habitats. Wandlebury and Beechwoods are both woodland environments on chalky soil. There are two differences between the sites. The first is that most of Beechwoods was planted in 1992 while parts of Wandlebury have been woodland for centuries. This gave me the opportunity to compare an old, established woodland with a newer, planted environment. Wandlebury also includes some chalk grassland, so it provides a different habitat to examine. Coton is a very different kind of habitat - it is not wooded and is much more marshy. I hoped that I would find different kinds of plant there. Mill Road Cemetery is an example of a haven for wildlife in the middle of a busy city. It is interesting because it is not managed very much, so it has a mixture of planted and wild species. It was an opportunity to see the kind of rich environment which can exist when there are wild areas in urban environments.</p>
+
+<p><b>Plant identification apps</b></p>
+
+<p>Before getting started, I downloaded and tested a number of different plant identification apps:</p>
+
+<p>
+  <ul>
+    <li><a href="https://www.inaturalist.org/">iNaturalist</a></li>
+    <li><a href="https://floraincognita.com/">Flora Incognita</a></li>
+    <li><a href="https://plantnet.org/en/">PlantNet</a></li>
+  </ul>
+</p>
+
+<p>There were a number of reasons why I chose PlantNet as the most suitable app for this project. It is designed for naturalists rather than for gardeners, so it is very good on wild flowers and weeds. It is an open-source app for citizen science, so your observations are contributed to a central database which is used for environmental and climate studies. It allows you to do detailed observations for tricky cases, such as photographing the leaf, bark, fruit and other features, which is very similar to how traditional plant identification works. I learned on my visit to the University Herbarium that it is actually the app they use. Finally, and very importantly for my project, it allows you to easily export your data in a standard csv format, which was essential in building this website.</p>
+
+<p>There were a couple of difficulties with using PlantNet. The first is that it relies on a strong internet connection, which is not always available when you are in coutryside environments - though strangely, for my observations, the biggest problem with internet connection was in the middle of Mill Road Cemetery. The second is that the app design can be a bit counter intuitive. For instance, when you have identified a plant you have to press share for it to be part of your dataset. It is easy to forget to do this, and then plants will be missing from your observations.</p>
+
+<p><b>Collecting of observations</b></p>
+
+<p>Plant observations were collected in three visits, in March, May and late June. The idea was to get a full range of species which might be more difficult or easier to spot at different times of year. May and June were much easier than March because many plants were flowering.</p>
+
+<p>There are two main methods for collecting plant observations. One is to do it very systematically by putting a grid on a patch of ground and observing every single species which grows there. The second is to walk around a larger area and observe what you can see.I used the second method, which is similar to how the specimens in the Herbarium were collected. It gives a broader overview of the kinds of species which grow in an area, though it is less useful for detailed analysis. However, I did try to follow the same route on my walks around the site to be more consistent in my observations.</p>
+
+<img src="../images/IMG_2295.jpg" alt="Collecting observations" width="30%">
+<img src="../images/IMG_2318.jpg" alt="Collecting observations" width="30%">
+<img src="../images/IMG_2321.jpg" alt="Collecting observations" width="30%">
+
+
+<p>Because of the size and scope of the project, it is meant to be an example for how anyone can build their own digital herbarium, rather than a complete database of plant specimens. As I began to collect my specimens and read around the subject a bit more, I realised that the methods I have tested could be used as an educational model for future biology students. Most people of my age would struggle to tell the difference between the different plants in their gardens or local areas. As expertise in plant identification decreases, what the scientists Elisabeth Schussler and James Wandersee called 'plant blindness' increases. When most people look at a landscape or garden they just see a mass of green rather than individual shades of green or types of plant (Haeckel, 2025). Humans are much more interested in identifying mammals, birds and insects than plants, so plants become a kind of 'meaningless background' that is neglected, despite the fact that all other species depend on the health and variation of plant life. If biology students were given more time outside, and the task of creating their own local herbarium, they could combine digital tools with traditional skills (such as drawing, photography, specimen collection and learning through text-based keys and terminology). This would create a foundation for future expertise, as well as a greater personal engagement with the natural world for those students involved. It would help them to 'read' nature, and to see more and more details, rather than just the 'green mass' (Sanders, 2021). </p>
+
+</body>
+</html>

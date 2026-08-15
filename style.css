@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  cursor: pointer;
+}
+
+tr[data-id] {
+  cursor: pointer;
+}
+
+img.plant-image {
+  max-width: 100%;
+  height: auto;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.3rem 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
